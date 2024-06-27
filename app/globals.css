@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gold {
+  color: #dcab4f;
+}
+.bg-gold {
+  background-color: #dcab4f;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
