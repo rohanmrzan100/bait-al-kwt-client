@@ -1,16 +1,15 @@
 "use client";
-import { BASE_URL } from "@/Constants";
 import { IProductProps } from "@/app/type";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import ProductCardSkeleton from "../ProductCard/ProductCardSkeleton";
+import { BASE_URL } from "@/Constants";
 
 const CategoryBlock = ({ category }: { category: string }) => {
   const [products, setProducts] = useState<IProductProps[] | null>(null);
 
   const [isLoading, setIsLoading] = useState(false);
-
 
   useEffect(() => {
     async function getProductByCategory(category: string) {
@@ -25,6 +24,9 @@ const CategoryBlock = ({ category }: { category: string }) => {
           const response = await axios.get(
             BASE_URL + "/api/product/category/" + category
           );
+
+          console.log(response);
+
           setProducts(response.data.product);
           setIsLoading(true);
         }
