@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import BannerImg from "@/public/img/Banner.png";
+import BannerImg from "@/public/img/banner.png"
 const Banner = () => {
+
+  console.log(process.env.NODE_ENV);
+  
   return (
     <div className="relative bg-gradient-to-r from-sky-500 to-sky-700 mb-8 min-h-[400px] ">
       <div className=" w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-between">
