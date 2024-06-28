@@ -1,11 +1,8 @@
 "use client";
 
-import bannerImgOne from "@/public/img/banner/Banner_image_one.png";
-import bannerImgTwo from "@/public/img/banner/Banner_image_two.png";
 import Image from "next/image";
-import catgory1 from "@/public/img/category/trolly.jpg";
+import BannerImg from "@/public/img/Banner.png";
 const Banner = () => {
-
   return (
     <div className="relative bg-gradient-to-r from-sky-500 to-sky-700 mb-8 min-h-[400px] ">
       <div className=" w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-between">
@@ -22,14 +19,9 @@ const Banner = () => {
         </div>
         <div className=" flex flex-col gap-0 lg:flex-row">
           <Image
-            src={catgory1}
+            src={BannerImg}
             alt="Picture of the author"
-            className="object-contain h-[300px]  "
-          ></Image>
-          <Image
-            src={catgory1}
-            alt="Picture of the author"
-            className="object-contain h-[300px]  "
+            className="object-contain w-[100%]  "
           ></Image>
         </div>
       </div>
