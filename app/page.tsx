@@ -6,10 +6,11 @@ import CategoryBlock from "./components/HomePage/CategoryBlock";
 import { Categorys } from "./utils/Category";
 export default function Home() {
   return (
-    <div className="py-8">
+    <div className="pb-8 pt-2">
       <Container>
-        <Banner /> <BannerBottom />
-        <Categories />
+        <Banner /> 
+        <BannerBottom />
+        {/* <Categories /> */}
         {Categorys.map((item, index) => {
           return <CategoryBlock category={item.label} key={index} />;
         })}

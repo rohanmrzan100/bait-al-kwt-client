@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
+import HeaderBottom from "./components/Navbar/NavbarBottom";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -38,6 +39,7 @@ export default function RootLayout({
           <UserProvider>
             <div className="flex flex-col min-h-screen">
               <Navbar />
+              <HeaderBottom />
               <main className="flex-grow">{children}</main>
               <Footer />
             </div>

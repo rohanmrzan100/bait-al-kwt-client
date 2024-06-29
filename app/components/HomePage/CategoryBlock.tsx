@@ -40,7 +40,7 @@ const CategoryBlock = ({ category }: { category: string }) => {
   return (
     <div className="my-[16px]">
       <h1 className="text-[22px] text-slate-800 font-semibold mb-[16px]">
-        {category}
+        {category == "All" ? "Latest Products" : category}
       </h1>
       {isLoading ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 my-4 px-2">
