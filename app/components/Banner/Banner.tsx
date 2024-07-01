@@ -15,12 +15,14 @@ const Banner = () => {
       showStatus={false}
       showIndicators={false}
       interval={3000}
+      showArrows={false}
+      showThumbs={false}
     >
       {/* Slide 1 */}
 
-      <div className="relative bg-gradient-to-r from-sky-500 to-sky-700 mb-8 max-h-[600px] ">
-        <div className=" w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-between">
-          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%]">
+      <div className="relative bg-gradient-to-r from-sky-500 to-sky-700 mb-8 max-h-[500px] rounded-lg ">
+        <div className=" w-full  mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-between">
+          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%] flex flex-col items-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
               Summer Sale !
             </h1>
@@ -33,11 +35,11 @@ const Banner = () => {
             <Button
               label="Shop Now"
               Icon={FaArrowRight}
-              custom=""
+              custom="w-72"
               onClick={() => {}}
             />
           </div>
-          <div className=" flex flex-col gap-0 lg:flex-row w-[40%]">
+          <div className=" flex flex-col gap-0 lg:flex-row w-[35%]">
             <Image
               src={BannerImg}
               alt="Picture of the author"
@@ -47,9 +49,9 @@ const Banner = () => {
         </div>
       </div>
       {/* Slide 2 */}
-      <div className="relative bg-gradient-to-r from-green-300 to-green-700 mb-8 max-h-[600px] ">
+      <div className="relative bg-gradient-to-r from-green-300 to-green-700 mb-8 max-h-[500px] rounded-lg">
         <div className=" w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-between">
-          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%]">
+          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%] flex flex-col items-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
               Summer Sale !
             </h1>
@@ -59,9 +61,14 @@ const Banner = () => {
             <p className="text-4xl md:text-6xl font-bold text-yellow-500 mb-4">
               Get 15% off
             </p>
-            <Button label="Shop Now" Icon={FaArrowRight} onClick={() => {}} />
+            <Button
+              label="Shop Now"
+              custom="w-72"
+              Icon={FaArrowRight}
+              onClick={() => {}}
+            />
           </div>
-          <div className=" flex flex-col gap-0 lg:flex-row w-[40%]">
+          <div className=" flex flex-col gap-0 lg:flex-row w-[35%]">
             <Image
               src={BannerImg}
               alt="Picture of the author"
@@ -72,9 +79,9 @@ const Banner = () => {
       </div>
 
       {/* Slide 3 */}
-      <div className="relative bg-gradient-to-r from-purple-300 to-purple-800 mb-8 max-h-[600px] ">
+      <div className="relative bg-gradient-to-r from-purple-300 to-purple-800 mb-8 max-h-[500px] rounded-lg">
         <div className=" w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-center justify-between">
-          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%]">
+          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%] flex flex-col items-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
               Summer Sale !
             </h1>
@@ -84,9 +91,14 @@ const Banner = () => {
             <p className="text-4xl md:text-6xl font-bold text-yellow-500 mb-4">
               Get 15% off
             </p>
-            <Button label="Shop Now" Icon={FaArrowRight} onClick={() => {}} />
+            <Button
+              custom="w-72"
+              label="Shop Now"
+              Icon={FaArrowRight}
+              onClick={() => {}}
+            />
           </div>
-          <div className=" flex flex-col gap-0 lg:flex-row w-[40%]">
+          <div className=" flex flex-col gap-0 lg:flex-row w-[35%]">
             <Image
               src={BannerImg}
               alt="Picture of the author"

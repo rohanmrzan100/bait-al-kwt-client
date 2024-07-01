@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import React from "react";
 import { Categorys } from "@/app/utils/Category";
 
@@ -16,14 +16,10 @@ const Categories = () => {
             <div
               key={item.label}
               // onClick={() => onClick(item.label)}
-              className=" bg-whiterounded-sm border-[1px] border-[#e2e2e2] bg-white p-[2px] flex flex-col items-center gap-2 transition cursor-pointer hover:shadow-xl min-w-[150px] "
+              className=" bg-white rounded-sm border-[1px] border-[#e2e2e2] flex flex-col  gap-8 transition cursor-pointer hover:shadow-xl min-w-[150px] justify-center items-center p-8"
             >
-              <Image
-                src={item.img}
-                alt={item.label}
-                className="object-contain h-[80px] w-[80px]"
-              />
-              <div className="font-medium text-sm text-center overflow-hidden mx-2">
+              <item.icon className="p-0 w-[40px] h-[40px]" />
+              <div className="font-medium text-sm text-center overflow-hidden p-0">
                 {item.label}
               </div>
             </div>

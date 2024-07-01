@@ -6,6 +6,7 @@ interface inputProps {
   id: string;
   label: string;
   type?: string;
+
   disabled?: boolean;
   required?: boolean;
   register: UseFormRegister<FieldValues>;
@@ -20,10 +21,12 @@ const Input = ({
   errors,
   label,
   type,
+
 }: inputProps) => {
   return (
     <div className="w-max-[650px]   relative my-4 ">
       <input
+     
         autoComplete="off"
         id={id}
         disabled={disabled}

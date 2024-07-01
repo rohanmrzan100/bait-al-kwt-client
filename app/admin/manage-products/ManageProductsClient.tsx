@@ -1,5 +1,6 @@
 import { BASE_URL } from "@/Constants";
 import ActionBtn from "@/app/components/ActionBtn";
+
 import Status from "@/app/components/Status";
 import { GetAllProducts } from "@/app/helper/Functions";
 import { IProductProps } from "@/app/type";
@@ -112,7 +113,7 @@ const ManageProductsClient = () => {
               <ActionBtn
                 icon={MdCached}
                 onClick={() => {
-                  handleToggleStock(params.row.id, params.row.inStock);
+                  handleToggleStock(params.row.id);
                 }}
               />
               <ActionBtn
@@ -132,29 +133,33 @@ const ManageProductsClient = () => {
     ];
   }
 
-  const handleToggleStock = (id: string, inStock: boolean) => {
+  const handleToggleStock = (id: string) => {
     const token = getCookie("token");
-    axios
-      .put(
-        BASE_URL + "/api/product/toggle-in-stock",
-        {
-          id: id,
-          inStock: inStock,
-        },
-        {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        }
-      )
-      .then((res) => {
-        toast.success("Product Status changed");
-        setFlag(!flag);
-      })
-      .catch((error) => {
-        console.log(error);
-        toast.error("Something went wrong !");
-      });
+
+    console.log(token);
+    router.push("/admin/edit-products/" + id);
+
+    // axios
+    //   .put(
+    //     BASE_URL + "/api/product/toggle-in-stock",
+    //     {
+    //       id: id,
+    //       inStock: inStock,
+    //     },
+    //     {
+    //       headers: {
+    //         Authorization: "Bearer " + token,
+    //       },
+    //     }
+    //   )
+    //   .then((res) => {
+    //     toast.success("Product Status changed");
+    //     setFlag(!flag);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //     toast.error("Something went wrong !");
+    //   });
   };
   const handleDeleteProduct = (id: string) => {
     const token = getCookie("token");

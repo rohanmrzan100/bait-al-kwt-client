@@ -10,7 +10,11 @@ const Admin = () => {
   if (role == "user" || role == "") {
     return <NotAuthorized />;
   }
-  return <div className="pt-8">Admin</div>;
+  return (
+    <div className="pt-8 h-[600px] flex items-center justify-center text-3xl text-black">
+      Comming Soon !
+    </div>
+  );
 };
 
 export default Admin;

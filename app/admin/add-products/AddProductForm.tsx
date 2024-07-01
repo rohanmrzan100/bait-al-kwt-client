@@ -112,7 +112,7 @@ const AddProductForm = () => {
   };
 
   return (
-    <div className="">
+    <div className="px-8">
       <h1 className="py-4 text-3xl font-bold text-slate-700 text-center">
         Add Product
       </h1>

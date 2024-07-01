@@ -5,6 +5,7 @@ import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 interface TextAreaProps {
   id: string;
   label: string;
+
   disabled?: boolean;
   required?: boolean;
   register: UseFormRegister<FieldValues>;

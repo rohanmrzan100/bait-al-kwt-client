@@ -7,8 +7,15 @@ interface CheckboxProps {
   label: string;
   disabled?: boolean;
   register: UseFormRegister<FieldValues>;
+
 }
-const Checkbox = ({ id, label, disabled, register }: CheckboxProps) => {
+const Checkbox = ({
+  id,
+  label,
+  disabled,
+  register,
+
+}: CheckboxProps) => {
   return (
     <div className="w-full flex flex-row gap-2 items-center mb-2">
       <input
@@ -17,6 +24,7 @@ const Checkbox = ({ id, label, disabled, register }: CheckboxProps) => {
         disabled={disabled}
         {...register(id)}
         className="cursor-pointer"
+  
       />
       <label htmlFor={id} className="font-medium cursor-pointer">
         {label}

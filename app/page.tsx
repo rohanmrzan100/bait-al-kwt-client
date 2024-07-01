@@ -10,7 +10,7 @@ export default function Home() {
       <Container>
         <Banner /> 
         <BannerBottom />
-        {/* <Categories /> */}
+        <Categories />
         {Categorys.map((item, index) => {
           return <CategoryBlock category={item.label} key={index} />;
         })}
