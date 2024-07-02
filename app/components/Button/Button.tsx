@@ -10,6 +10,7 @@ const Button = (props: ButtonProps) => {
     <button
       className={`flex-row-reverse disabled:opacity-70 disabled:cursor-not-allowed hover:opacity-80 rounded-md transition w-full border-slate-700 flex justify-center items-center gap-2 
       ${props.outline ? "bg-while text-slate-700" : "bg-slate-700 text-white"} 
+      
        ${
          props.small
            ? "text-sm py-1 px-2 font-light border-[1px]"

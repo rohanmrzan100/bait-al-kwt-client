@@ -2,10 +2,13 @@ import React from "react";
 import ourProduct from "@/public/img/category/trolly.jpg";
 import Image from "next/image";
 import Container from "../components/Container";
+import Link from "next/link";
+import Head from "next/head";
 
 const AboutUs: React.FC = () => {
   return (
     <Container>
+      <Head>About Us -Bait Al Kuwait</Head>
       <div className="py-8">
         <div className="container mx-auto max-w-7xl">
           <h1 className="text-5xl font-bold text-center mb-8">About Us</h1>
@@ -121,31 +124,15 @@ const AboutUs: React.FC = () => {
           </div>
 
           <div className="text-justify">
-            <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
-            <p className="text-lg mb-2">
-              We love hearing from our customers! Whether you have a question,
-              need assistance, or want to provide feedback, feel free to reach
-              out to us.
-            </p>
-            <p className="text-lg mb-2">
-              <strong>Email</strong>:{" "}
-              <a
-                href="mailto:support@baitalkuwait.com"
-                className="text-blue-500 hover:text-blue-700"
+            <h2 className="text-xl  mb-4">
+              You can contact us{" "}
+              <Link
+                href={"/contact-us"}
+                className="underline text-blue-700 cursor-pointer"
               >
-                support@baitalkuwait.com
-              </a>
-            </p>
-            <p className="text-lg mb-2">
-              <strong>Phone</strong>: +965 1234 5678
-            </p>
-            <p className="text-lg mb-2">
-              <strong>Address</strong>: 123 Clean Street, Kuwait City, Kuwait
-            </p>
-            <p className="text-lg mt-6">
-              Thank you for choosing Bait al Kuwait. Together, lets create a
-              cleaner, healthier world.
-            </p>
+                here
+              </Link>
+            </h2>
           </div>
         </div>
       </div>

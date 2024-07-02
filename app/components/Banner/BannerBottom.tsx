@@ -41,11 +41,9 @@ export default function BannerBottom() {
               strokeLinejoin="round"
             />
           </svg>
-          <h3 className="text-xl font-semibold text-gray-900 mt-4">
-            Delivery
-          </h3>
+          <h3 className="text-xl font-semibold text-gray-900 mt-4">Delivery</h3>
           <p className="text-base font-normal text-gray-700 mt-4 lg:w-full md:w-9/12 w-full">
-            Free worldwide delivery on orders above $100
+            Delivery services available across the entire state of Kuwait
           </p>
         </div>
 
@@ -72,11 +70,11 @@ export default function BannerBottom() {
           <p className="text-base font-normal text-gray-700 mt-4 lg:w-full md:w-9/12 w-full">
             Our customer care is available 24/7 at{" "}
             <span className="font-semibold cursor-pointer text-blue-600">
-              +495-589-509
+              +965 24910311
             </span>{" "}
             and{" "}
             <span className="font-semibold cursor-pointer text-blue-600">
-              customercare@gmail.com
+             info@baitalkwt.com
             </span>
           </p>
         </div>
@@ -119,9 +117,7 @@ export default function BannerBottom() {
               strokeLinejoin="round"
             />
           </svg>
-          <h3 className="text-xl font-semibold text-gray-900 mt-4">
-            Recycle
-          </h3>
+          <h3 className="text-xl font-semibold text-gray-900 mt-4">Recycle</h3>
           <p className="text-base font-normal text-gray-700 mt-4 lg:w-full md:w-9/12 w-full">
             All our products are 100% recyclable
           </p>

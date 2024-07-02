@@ -163,7 +163,7 @@ const Footer = () => {
               rel="noreferrer"
             >
               <span className="ml-1 font-medium group-hover:text-primeColor">
-                Powered by ACT Nepal
+                Powered by ACT PL
               </span>
             </a>
           </p>

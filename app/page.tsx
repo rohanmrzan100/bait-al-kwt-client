@@ -8,13 +8,14 @@ export default function Home() {
   return (
     <div className="pb-8 pt-2">
       <Container>
-        <Banner /> 
-        <BannerBottom />
+        <Banner />
+
         <Categories />
         {Categorys.map((item, index) => {
           return <CategoryBlock category={item.label} key={index} />;
         })}
         {/* <HomeDisplay /> */}
+        <BannerBottom />
       </Container>
     </div>
   );

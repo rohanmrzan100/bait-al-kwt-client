@@ -15,6 +15,7 @@ const HeaderBottom = () => {
         Home
       </p>
       <div className="h-4 border-l-2 border-white mx-2"></div>
+
       <p
         className="flex items-center gap-1 h-8 px-2 border-b-2 border-transparent hover:border-white cursor-pointer text-md font-semibold "
         onClick={() => {
@@ -31,6 +32,15 @@ const HeaderBottom = () => {
         }}
       >
         Contact Us
+      </p>
+      <div className="h-4 border-l-2 border-white mx-2"></div>
+      <p
+        className="flex items-center gap-1 h-8 px-2 border-b-2 border-transparent hover:border-white cursor-pointer text-md font-semibold "
+        onClick={() => {
+          router.push("/shop");
+        }}
+      >
+        Shop
       </p>
       <div className="h-4 border-l-2 border-white mx-2"></div>
       <CategoriesDropDown />
