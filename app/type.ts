@@ -54,15 +54,13 @@ export interface productImageProps {
 }
 
 export interface ButtonProps {
-  label: string;
-  disabled?: boolean;
   outline?: boolean;
   small?: boolean;
-  custom?: string;
-  Icon?: IconType;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: () => void;
+  label: string;
+  Icon?: React.ComponentType<{ size: number }>;
+  custom?: string; // Ensure this is defined
 }
-
 export interface Reviews {
   userId: string;
   productId: string;
@@ -100,5 +98,4 @@ export interface Address {
   streetAddress: string;
   city: string;
   postalCode: number;
-
 }

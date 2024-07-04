@@ -38,7 +38,7 @@ const Banner = () => {
             <Button
               label="Shop Now"
               Icon={FaArrowRight}
-              custom="w-48 "
+              custom="w-48"
               onClick={() => {
                 router.push("/shop");
               }}

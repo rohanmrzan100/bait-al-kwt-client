@@ -4,12 +4,10 @@ import { ButtonProps } from "@/app/type";
 import React from "react";
 
 const Button = (props: ButtonProps) => {
-
-
   return (
     <button
       className={`flex-row-reverse disabled:opacity-70 disabled:cursor-not-allowed hover:opacity-80 rounded-md transition w-full border-slate-700 flex justify-center items-center gap-2 
-      ${props.outline ? "bg-while text-slate-700" : "bg-slate-700 text-white"} 
+      ${props.outline ? "bg-white text-slate-700" : "bg-slate-700 text-white"} 
       
        ${
          props.small

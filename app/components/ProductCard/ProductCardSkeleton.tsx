@@ -6,7 +6,7 @@ const ProductCardSkeleton = () => {
   return (
     <div
       role="status"
-      className="w-full relative group border-[1px] shadow-lg bg-white max-w-80 animate-pulse"
+      className="w-full relative group border-[1px] shadow-lg bg-white max-w-80 min-w-[280px] animate-pulse"
     >
       <div className="max-w-80 py-3 flex flex-col gap-1 border-t-0 px-4">
         <div className="flex flex-col items-start gap-2 justify-between font-titleFont">

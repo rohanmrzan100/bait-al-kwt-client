@@ -34,7 +34,7 @@ const ProductCard = (props: IProductProps) => {
 
   const { handleAddProductToCart, cartProduct, cartTotalQty } = useCart();
   return (
-    <div className="w-full relative group border-[1px] shadow-lg bg-white max-w-80">
+    <div className="w-full relative group border-[1px] shadow-lg bg-white max-w-80 min-w-[275px] ">
       <div className="max-w-80 max-h-80 relative overflow-hidden">
         <div className="relative w-full h-52 ">
           {" "}

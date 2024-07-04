@@ -3,8 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-
-
 import { Categorys } from "@/app/utils/Category";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 const CategoriesDropDown = () => {
@@ -50,14 +48,18 @@ const CategoriesDropDown = () => {
         >
           {Categorys.map((item) => {
             return (
-              <li role="none" key={item.label}>
+              <li key={item.label}>
                 <div
                   className="flex justify-start items-center font-semibold hover:text-[#dcab4f] py-2 px-4 gap-4 whitespace-no-wrap cursor-pointer"
                   onClick={() => {
-                    router.push("/product/" + item.label);
+                    if (item.label == "All") {
+                      router.push("/shop");
+                    } else {
+                      router.push("/shop?category=" + item.label);
+                    }
+
                     toggleDropdown();
                   }}
-                  role="menuitem"
                 >
                   <item.icon size={24} />
                   {item.label}

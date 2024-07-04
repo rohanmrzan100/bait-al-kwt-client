@@ -45,9 +45,13 @@ const CategoryBlock = ({ category }: { category: string }) => {
       {isLoading ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 my-4 px-2">
           {products &&
-            products.map((product: IProductProps, index) => (
-              <ProductCard {...product} key={index} />
-            ))}
+            products.map((product: IProductProps, index) => {
+              return (
+                <div key={index}>
+                  <ProductCard {...product} />
+                </div>
+              );
+            })}
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 my-4 px-2">
