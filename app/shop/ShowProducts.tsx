@@ -1,13 +1,11 @@
 "use client";
-import React from "react";
-import Pagination from "../components/Pagination/Pagination";
-import ProductCardSkeleton from "../components/ProductCard/ProductCardSkeleton";
-import ProductCard from "../components/ProductCard/ProductCard";
-import { useSearchParams } from "next/navigation";
-import axios from "axios";
 import { BASE_URL } from "@/Constants";
+import axios from "axios";
+import { useSearchParams } from "next/navigation";
+import Pagination from "../components/Pagination/Pagination";
+import ProductCard from "../components/ProductCard/ProductCard";
+import ProductCardSkeleton from "../components/ProductCard/ProductCardSkeleton";
 
-import { useEffect, useState } from "react";
 import {
   Disclosure,
   DisclosureButton,
@@ -23,7 +21,7 @@ import {
   MinusIcon,
   PlusIcon,
 } from "@heroicons/react/20/solid";
-import Container from "../components/Container";
+import { useEffect, useState } from "react";
 import { IProductProps } from "../type";
 
 interface FilterState {
@@ -147,10 +145,11 @@ const ShowProducts = () => {
         const response = await axios.post(BASE_URL + "/api/product/filter", {
           sort: selectedSort,
           searchTerm: searchParams.get("q"),
-          category: new Array(searchParams.get("category")),
+          category: searchParams.get("category")
+            ? new Array(searchParams.get("category"))
+            : selectedFilters.category,
           color: selectedFilters.color,
         });
-        console.log(response);
         setProducts(response.data.products);
       } catch (error) {
         console.log(error);
@@ -158,6 +157,7 @@ const ShowProducts = () => {
         setIsLoading(false);
       }
     }
+
     getFilteredProduct(selectedSort, selectedFilters);
   }, [selectedSort, selectedFilters, searchParams]);
   return (
@@ -320,7 +320,9 @@ const ShowProducts = () => {
                     <ProductCard {...product} key={index} />
                   ))}
                 {products && products.length < 1 && (
-                  <h2 className="text-orange-600">No products founds !</h2>
+                  <h2 className="text-orange-600 font-semibold">
+                    No products founds !
+                  </h2>
                 )}
               </div>
             ) : (
