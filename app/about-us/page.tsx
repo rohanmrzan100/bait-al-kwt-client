@@ -4,6 +4,11 @@ import Image from "next/image";
 import Container from "../components/Container";
 import Link from "next/link";
 import Head from "next/head";
+import image1 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.28_07938457.jpg";
+import image2 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.30_062653af.jpg";
+import image3 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.30_9d6acab6.jpg";
+import image4 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.31_09e99f4b.jpg";
+import image5 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.31_0b46708f.jpg";
 
 const AboutUs: React.FC = () => {
   return (
@@ -35,7 +40,7 @@ const AboutUs: React.FC = () => {
             </div>
             <div>
               <Image
-                src={ourProduct}
+                src={image1}
                 alt="Our Story"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -45,7 +50,7 @@ const AboutUs: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
               <Image
-                src={ourProduct}
+                src={image2}
                 alt="Our Products"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -105,7 +110,7 @@ const AboutUs: React.FC = () => {
             </div>
             <div>
               <Image
-                src={ourProduct}
+                src={image3}
                 alt="Why Choose Us"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -123,8 +128,23 @@ const AboutUs: React.FC = () => {
             </p>
           </div>
 
+          <div>
+            <Image
+              src={image4}
+              alt="Why Choose Us"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+          <div>
+            <Image
+              src={image5}
+              alt="Why Choose Us"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+
           <div className="text-justify">
-            <h2 className="text-xl  mb-4">
+            <h2 className="text-xl  my-4">
               You can contact us{" "}
               <Link
                 href={"/contact-us"}

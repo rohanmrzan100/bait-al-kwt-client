@@ -40,7 +40,7 @@ export default function Home() {
                   <span>Items</span>
                 </div>
                 <svg
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   fill="none"
