@@ -37,21 +37,22 @@ const CategoryBlock = ({ category }: { category: string }) => {
   }, []);
 
   return (
-    <div className="my-[16px]">
+    <div className="my-[16px] w-full">
       <h1 className="text-[22px] text-slate-800 font-semibold mb-[16px]">
         {category == "All" ? "Just For You" : category}
       </h1>
       {isLoading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 my-4 px-2  gap-8">
+        <div className=" w-full  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
           {products &&
             products.slice(0, 8).map((product: IProductProps, index) => {
               return (
                 <>
-                  {" "}
                   <div key={index}>
                     <ProductCard {...product} />
-                  </div>{" "}
-                 
+                  </div>
+                  <div key={index}>
+                    <ProductCard {...product} />
+                  </div>
                 </>
               );
             })}

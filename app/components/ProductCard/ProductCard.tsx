@@ -34,8 +34,8 @@ const ProductCard = (props: IProductProps) => {
 
   const { handleAddProductToCart, cartProduct, cartTotalQty } = useCart();
   return (
-    <div className="w-full relative group border-[1px] shadow-lg bg-white max-w-80 min-w-[275px] ">
-      <div className="max-w-80 max-h-80 relative overflow-hidden">
+    <div className="w-full relative group border-[1px] shadow-lg bg-white  min-w-[275px] ">
+      <div className="max-h-80 relative overflow-hidden">
         <div className="relative w-full h-52 ">
           {" "}
           {/* Added height class */}
@@ -70,7 +70,7 @@ const ProductCard = (props: IProductProps) => {
           </ul>
         </div>
       </div>
-      <div className="max-w-80 py-6 flex flex-col gap-1 border-t-0 px-4">
+      <div className=" py-6 flex flex-col gap-1 border-t-0 px-4">
         <div className="flex flex-col items-start gap-2 justify-between font-titleFont">
           <h2 className="text-lg text-primeColor font-bold">
             {TruncateText(props.name)}
