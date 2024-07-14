@@ -50,9 +50,6 @@ const CategoryBlock = ({ category }: { category: string }) => {
                   <div key={index}>
                     <ProductCard {...product} />
                   </div>
-                  <div key={index}>
-                    <ProductCard {...product} />
-                  </div>
                 </>
               );
             })}
