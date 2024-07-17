@@ -4,6 +4,7 @@ import { useCart } from "@/app/hooks/useCart";
 import { IProductProps, cartProduct } from "@/app/type";
 import { formatPrice } from "@/app/utils/FormatPrice";
 import { TruncateText } from "@/app/utils/TruncateText";
+import { BASE_URL } from "@/Constants";
 import { Rating } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -42,7 +43,7 @@ const ProductCard = (props: IProductProps) => {
           <Image
             fill
             alt={props.name}
-            src={props.image[0].image}
+            src={BASE_URL + props.image[0].image}
             className="object-contain"
             sizes="100%"
           />

@@ -37,7 +37,7 @@ export default function Contact() {
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         className="h-6 w-6"
                       >
@@ -67,7 +67,7 @@ export default function Contact() {
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         className="h-6 w-6"
                       >
@@ -98,7 +98,7 @@ export default function Contact() {
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         className="h-6 w-6"
                       >

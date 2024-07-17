@@ -67,12 +67,14 @@ const CartClient = () => {
           <p className="text-slate-500">
             Taxes and shipping calculated at checkout{" "}
           </p>
+
           <Button
             label="Checkout"
             onClick={() => {
               router.push("/checkout");
             }}
           />
+
           <div className="flex flex-col items-center">
             <Link
               href={"/"}
