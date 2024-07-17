@@ -3,8 +3,7 @@
 const nextConfig = {
   images: {
     domains: [
-      "m.media-amazon.com",
-      "lh3.googleusercontent.com",
+      "ns3.actnepal.com.np",
       "localhost",
       "202.51.82.22",
     ],
