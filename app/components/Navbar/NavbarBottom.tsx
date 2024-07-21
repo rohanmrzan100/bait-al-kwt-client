@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 const HeaderBottom = () => {
   const router = useRouter();
   return (
-    <div className="w-full h-16 bg-slate-700 text-sm text-white px-4 flex items-center">
+    <div className="w-full h-16 text-sm  text-white px-4 flex items-center"  style={{ backgroundColor: "#054875" }}>
       <p
         className="flex items-center gap-1 h-8 px-2 border-b-2 border-transparent hover:border-white cursor-pointer text-md font-semibold "
         onClick={() => {

@@ -11,7 +11,7 @@ export default function Home() {
   const router = useRouter();
   return (
     <div className="pb-8 pt-2">
-      <Container>
+      <Container >
         <Banner />
 
         <Categories />

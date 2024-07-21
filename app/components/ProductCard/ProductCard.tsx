@@ -60,7 +60,7 @@ const ProductCard = (props: IProductProps) => {
               </span>
             </li>
             <li
-              className="text-[#767676] hover:text-[#DCAB4F] text-md font-medium border-b-[1px] border-b-gray-200 hover:border-b-[#DCAB4F] flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full h-1/2"
+              className="text-[#767676] hover:text-[#DCAB4F] text-md font-medium border-b-[1px] border-b-gray-200 hover:border-b-[#DCAB4F] flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full h-1/2 "
               onClick={handleViewDetails}
             >
               View Details
