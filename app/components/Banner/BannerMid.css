@@ -1,0 +1,55 @@
+/* .bannerMidContainer {
+  margin-top: 20px;
+}
+.sale-banner {
+  display: block;
+  margin: 30px auto;
+  border-radius: 20px;
+  height: auto; 
+  max-height: 600px; 
+  width: auto; 
+  max-width: 100%; 
+  cursor: pointer;
+} */
+/* .bannerMidContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; 
+}
+
+.sale-banner {
+  width: 80%; 
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+} */
+
+
+/* .bannerMidContainer {
+  position: relative;
+  width: 100%;
+}
+
+.sale-banner {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+} */
+
+.bannerMidContainer {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.sale-banner {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
