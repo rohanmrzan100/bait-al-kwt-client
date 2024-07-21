@@ -5,20 +5,19 @@
 .text-gold {
   color: #dcab4f;
 }
-.bg-baby{
+.bg-baby {
   background-color: #1399f2;
 }
 .bg-gold {
   background-color: #dcab4f;
 }
-.bg-nav{
-  color:#1399f2;
-
+.bg-nav {
+  color: #1399f2;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-.slick-slide>div{
+.slick-slide > div {
   margin: 0 10px;
 }
 .button {
@@ -109,4 +108,8 @@
 
 .button:hover svg {
   transform: translateY(-50%) rotate(-90deg);
+}
+
+.dot {
+  background: #000 !important;
 }
