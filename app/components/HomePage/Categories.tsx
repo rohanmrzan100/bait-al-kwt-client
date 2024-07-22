@@ -23,7 +23,7 @@ const Categories = () => {
                   router.push("/shop?category=" + item.label);
                 }
               }}
-              className=" bg-white rounded-sm border-[1px] border-[#e2e2e2] flex flex-col  gap-8 transition cursor-pointer hover:shadow-xl min-w-[150px] justify-center items-center p-8"
+              className=" bg-white border-[1px] border-[#e2e2e2] flex flex-col  gap-8 transition cursor-pointer hover:shadow-xl min-w-[150px] justify-center items-center p-8 rounded-xl shadow-lg"
             >
               <item.icon className="p-0 w-[40px] h-[40px]" />
               <div className="font-medium text-sm text-center overflow-hidden p-0">
