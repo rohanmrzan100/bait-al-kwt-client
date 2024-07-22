@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-const Categories = () => {
+const CategorySlider = () => {
   const router = useRouter();
   const settings = {
     dots: true,
@@ -19,6 +19,7 @@ const Categories = () => {
   };
 
   return (
+
     <div className="w-full m-auto cursor-pointer">
       <div className="mt-20 text-center">
         <h2 className="text-3xl font-semibold mb-6">Categories</h2>
@@ -35,13 +36,14 @@ const Categories = () => {
 
                   <p className="text-xl font-semibold m-0 p-0">{item.label}</p>
                 </div>
+
               </div>
-            );
-          })}
-        </Slider>
-      </div>
+            </div>
+          );
+        })}
+      </Slider>
     </div>
   );
 };
 
-export default Categories;
+export default CategorySlider;
