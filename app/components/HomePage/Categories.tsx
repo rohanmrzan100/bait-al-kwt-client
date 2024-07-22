@@ -19,29 +19,24 @@ const CategorySlider = () => {
   };
 
   return (
-
     <div className="w-full m-auto cursor-pointer">
       <div className="mt-20 text-center">
         <h2 className="text-3xl font-semibold mb-6">Categories</h2>
         <Slider {...settings}>
-          {Categorys.map((item) => {
-            return (
-              <div key={item.label} className="h-60">
-                <div className="flex flex-col justify-between items-center text-center bg-white w-full p-4 gap-3 hover:scale-110  h-full rounded-lg shadow-xl ">
-                  <img
-                    src={item.image.src}
-                    alt={`${item.label} image`}
-                    className="max-h-[100px] object-contain "
-                  />
-
-                  <p className="text-xl font-semibold m-0 p-0">{item.label}</p>
-                </div>
-
+          {Categorys.map((item) => (
+            <div key={item.label} className="h-60">
+              <div className="flex flex-col justify-between items-center text-center bg-white w-full p-4 gap-3 hover:scale-110 h-full rounded-lg shadow-xl">
+                <img
+                  src={item.image.src}
+                  alt={`${item.label} image`}
+                  className="max-h-[100px] object-contain"
+                />
+                <p className="text-xl font-semibold m-0 p-0">{item.label}</p>
               </div>
             </div>
-          );
-        })}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
