@@ -10,7 +10,7 @@ const BannerMid: React.FC = () => {
   return (
     <div className="bannerMidContainer">
       <Image
-        className="sale-banner"
+        className="sale-banner hidden md:flex lg:flex "
         src={BannerMidImg}
         alt="Flash Sale"
         onClick={() => {

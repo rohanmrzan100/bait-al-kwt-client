@@ -15,7 +15,7 @@ const Banner = () => {
       <div className={styles.carouselWrapper}>
         <CarouselDiv />
       </div>
-      <div className={styles.bannerMidWrapper}>
+      <div className={ `${styles.bannerMidWrapper} hidden md:flex lg:flex`}>
         <BannerMid />
       </div>
     </div>
