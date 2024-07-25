@@ -29,21 +29,21 @@ const CategoriesDropDown = () => {
     };
   }, [dropdownRef]);
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
+    <div className="relative inline-block text-left btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static" ref={dropdownRef}>
       <div
         className="flex justify-center items-center"
         onClick={toggleDropdown}
         aria-haspopup="true"
         aria-expanded={isOpen ? "true" : "false"}
       >
-        <p className="flex items-center gap-1 h-8 px-2 border-b-2 border-transparent hover:border-white cursor-pointer text-md font-semibold">
+        <p className="flex items-center gap-1 h-8 px-2 border-b-2 border-transparent hover:text-blue-400 cursor-pointer text-md font-semibold">
           Categories
         </p>
         {!isOpen ? <FaChevronDown size={16} /> : <FaChevronUp size={16} />}
       </div>
       {isOpen && (
         <ul
-          className="dropdown-menu z-50 absolute left-0 mt-1 border-2 shadow-xl bg-white text-slate-700 w-52 rounded-md"
+          className="dropdown-menu z-50 absolute right-0 mt-4 mr-2 border-2 shadow-xl bg-white text-slate-700 w-52 rounded-md"
           role="menu"
         >
           {Categorys.map((item) => {
@@ -61,7 +61,7 @@ const CategoriesDropDown = () => {
                     toggleDropdown();
                   }}
                 >
-                  <item.icon size={24} />
+                  <item.icon size={24}/>
                   {item.label}
                 </div>
               </li>

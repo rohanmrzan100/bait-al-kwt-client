@@ -19,39 +19,7 @@ function CarouselDiv() {
       // showThumbs={false}
       className="h-[500px] "
     >
-      <div className="relative bg-gradient-to-r from-purple-300 to-purple-800 mb-8 rounded-lg h-[500px]">
-        <div className="h-full w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-start justify-between">
-          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%] flex flex-col justify-between h-full flex-1  items-start">
-            <div className="flex flex-col items-start">
-              <h1 className="inline text-4xl md:text-6xl font-bold text-white mb-4 m-0 p-0">
-                Global Collection
-              </h1>
-              <h1 className="inline text-4xl md:text-6xl font-bold text-purple-900 mb-4 m-0 p-0">
-                Best Price Guaranteed
-              </h1>
-              <p className="text-2xl font-bold mb-4 uppercase text-purple-900">
-                New Arrivals
-              </p>
-            </div>
-            <button
-              onClick={() => {
-                router.push("/shop");
-              }}
-              className="bg-purple-700 text-white text-xl py-2 px-6 rounded-xl font-semibold"
-            >
-              Discover More
-            </button>
-          </div>
-          <div className="w-[40%] h-full relative overflow-hidden">
-            <Image
-              src={BannerImg}
-              alt="Picture of the author"
-              className="max-h-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="relative bg-gradient-to-r from-green-300 to-green-700 mb-8 rounded-lg h-[500px]">
+      <div className="relative bg-cleanMirror mb-8 rounded-lg h-[500px]">
         <div className="h-full w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-start justify-between">
           <div className="mb-8 md:mb-0 text-center w-full md:w-[40%] flex flex-col justify-between h-full items-start">
             <div className="flex flex-col items-start">
@@ -67,7 +35,7 @@ function CarouselDiv() {
               onClick={() => {
                 router.push("/shop");
               }}
-              className="bg-white text-green-700 text-xl py-2 px-6 rounded-xl font-semibold"
+              className="bg-gray-800 text-white text-xl py-2 px-6 rounded-xl font-semibold"
             >
               Browse Collection
             </button>
@@ -81,13 +49,41 @@ function CarouselDiv() {
           </div>
         </div>
       </div>
+
+      <div className="relative bg-noMans mb-8 rounded-lg h-[500px]">
+        <div className="h-full w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-start justify-between">
+          <div className="mb-8 md:mb-0 text-center w-full md:w-[40%] flex flex-col justify-between h-full flex-1  items-start">
+            <div className="flex flex-col items-start">
+              <h1 className="inline  text-left text-4xl md:text-6xl font-bold text-gray-800 mb-4 m-0 p-0 ">
+                New Arrivals
+              </h1>
+
+              <p className="text-2xl font-bold mb-4 uppercase">
+                Check out our latest collection
+              </p>
+            </div>
+            <button
+              onClick={() => {
+                router.push("/shop");
+              }}
+              className="bg-teal-500 text-white text-xl py-2 px-6 rounded-xl font-semibold"
+            >
+              Discover More
+            </button>
+          </div>
+          <div className="w-[40%] h-full relative overflow-hidden">
+            <Image
+              src={BannerImgn1}
+              alt="Picture of the author"
+              className="max-h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
       <div className="relative bg-gradient-to-r from-sky-500 to-sky-700 mb-8 rounded-lg h-[500px]">
         <div className="h-full w-full mx-auto px-8 py-12 flex flex-col gap-2 md:flex-row items-start justify-between">
           <div className="mb-8 md:mb-0 text-center w-full md:w-[40%] flex flex-col justify-between h-full items-start">
             <div className="flex flex-col items-start">
-              <h1 className="inline text-4xl md:text-6xl font-bold text-white mb-4 m-0 p-0">
-                Global Collection
-              </h1>
               <h1 className="text-left inline text-4xl md:text-6xl font-bold text-white mb-4 m-0 p-0">
                 Clean Smarter, Not Harder
               </h1>
@@ -106,7 +102,7 @@ function CarouselDiv() {
           </div>
           <div className="w-[40%] h-full relative overflow-hidden">
             <Image
-              src={BannerImgn1}
+              src={BannerImg}
               alt="Picture of the author"
               className="max-h-full object-cover"
             />
