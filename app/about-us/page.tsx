@@ -9,82 +9,69 @@ import image2 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.30_
 import image3 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.30_9d6acab6.jpg";
 import image4 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.31_09e99f4b.jpg";
 import image5 from "@/public/img/about-us/WhatsApp Image 2024-07-02 at 22.07.31_0b46708f.jpg";
+import logo from "../../public/img/about-us/logo new.jpg";
+import aboutUs from "../../public/img/about-us/About us New.png";
+import location from "../../public/img/about-us/location-icon.png";
+import products from "../../public/img/bannern1.png";
+import contact from "../../public/img/about-us/contact-icon.png";
+import Card from "./Card";
 
 const AboutUs: React.FC = () => {
   return (
-    <Container>
-      <Head>About Us -Bait Al Kuwait</Head>
-      <div className="py-8">
-        <div className="container mx-auto max-w-7xl">
-          <h1 className="text-5xl font-bold text-center mb-8">About Us</h1>
-          <p className="text-lg text-center mb-12 max-w-2xl mx-auto">
-            Welcome to <strong>Bait al Kuwait</strong>, your one-stop
-            destination for all your cleaning product needs. We pride ourselves
-            on being a comprehensive supplier, dedicated to providing
-            high-quality cleaning solutions for both residential and commercial
-            spaces. Our mission is to make every home and workplace sparkle with
-            cleanliness and hygiene.
-          </p>
+    <>
+      <Head>
+        <title>About Us - Bait Al Kuwait</title>
+      </Head>
+      <div>
+        {/* <div className="container mx-auto max-w-7xl"> */}
+        <div>
+          <div>
+            <Image src={aboutUs} alt="About Us" />
+          </div>
+          <div
+            className=" flex flex-col bg-grey"
+            style={{ margin: "20px 10px" }}
+          >
+            <h2 className="text-3xl font-semibold mb-4 text-center">
+              Who are We
+            </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-            <div>
-              <h2 className="text-3xl font-semibold mb-4">Our Story</h2>
-              <p className="text-lg">
-                Bait al Kuwait was founded with the vision of creating a
-                cleaner, healthier environment for everyone. What began as a
-                small venture has grown into a leading supplier of cleaning
-                products in the region. Our commitment to excellence and
-                customer satisfaction has driven our growth and continues to
-                inspire us every day.
-              </p>
-            </div>
-            <div>
-              <Image
-                src={image1}
-                alt="Our Story"
-                className="w-full h-auto rounded-lg shadow-lg"
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+              <Card
+                title="Our Story"
+                imageSrc={logo.src}
+                content="Bait al Kuwait was founded with the vision of creating a cleaner, healthier environment for everyone. What began as a small venture has grown into a leading supplier of cleaning products in the region. Our commitment to excellence and customer satisfaction has driven our growth and continues to inspire us every day."
+              />
+              <Card
+                title=" Location"
+                imageSrc={location.src}
+                content="Discover our sole store, conveniently situated in the heart of Kuwait. Our location at Street 33, Plot 250, Unit 25, Shuwaikh Industrial 3, Block C is designed to provide you with easy access to all our products. Visit us at 73256 Kuwait for exceptional service and quality."
+              />
+              <Card
+                title="Products & Services"
+                content="Shop eco-friendly and top-brand cleaning solutions for home and commercial needs, available in-store and online."
+                imageSrc={products.src}
+              />
+              <Card
+                title="Contact and Help"
+                content="If you have a question about Bait al Kuwaitor a shopping experience, please visit baitalkwt.com/contact-us to reach the right team."
+                imageSrc={contact.src}
+                // link="router.push("/about-us")"
               />
             </div>
           </div>
+          <div className="flex  items-center text-center p-5 bg-gray-50 rounded-lg">
+            <Image
+              src={aboutUs}
+              alt="About Us"
+              className="max-w-full h-auto rounded-lg mb-4"
+              width={500}
+              height={300}
+            />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-            <div>
-              <Image
-                src={image2}
-                alt="Our Products"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-semibold mb-4">Our Products</h2>
-              <ul className="list-disc list-inside text-lg space-y-2">
-                <li>
-                  <strong>Household Cleaners</strong>: From kitchen and bathroom
-                  cleaners to floor and window solutions, we have everything you
-                  need to keep your home spotless.
-                </li>
-                <li>
-                  <strong>Commercial Cleaning Supplies</strong>:
-                  High-performance products designed for office buildings,
-                  schools, hospitals, and other commercial spaces.
-                </li>
-                <li>
-                  <strong>Eco-Friendly Options</strong>: We are committed to
-                  sustainability and offer a variety of eco-friendly cleaning
-                  products that are safe for both you and the environment.
-                </li>
-                <li>
-                  <strong>Specialty Items</strong>: Including industrial-grade
-                  cleaners, sanitizers, and more.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-            <div>
+            <div className="ml-10 text-left">
               <h2 className="text-3xl font-semibold mb-4">Why Choose Us?</h2>
-              <ul className="list-disc list-inside text-lg space-y-2">
+              <ul className="list-disc pl-5 text-lg space-y-2">
                 <li>
                   <strong>Quality Assurance</strong>: We source our products
                   from trusted manufacturers to ensure top-notch quality and
@@ -108,55 +95,46 @@ const AboutUs: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <Image
-                src={image3}
-                alt="Why Choose Us"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
           </div>
 
-          <div className="text-justify mb-12">
-            <h2 className="text-3xl font-semibold mb-4">Our Commitment</h2>
-            <p className="text-lg mx-auto">
+          <div className="flex flex-col m-6">
+            <h2 className="text-3xl font-semibold mb-4 text-center">
+              Our Commitment
+            </h2>
+            <p className="text-lg">
               At Bait al Kuwait, we believe in the power of clean. A clean
               environment not only enhances the aesthetic appeal but also
               promotes health and well-being. We are dedicated to helping you
               achieve and maintain this standard of cleanliness with our
               superior products and services.
             </p>
-          </div>
-
-          <div>
-            <Image
-              src={image4}
-              alt="Why Choose Us"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-          <div>
-            <Image
-              src={image5}
-              alt="Why Choose Us"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-
-          <div className="text-justify">
-            <h2 className="text-xl  my-4">
-              You can contact us{" "}
-              <Link
-                href={"/contact-us"}
-                className="underline text-blue-700 cursor-pointer"
-              >
-                here
-              </Link>
-            </h2>
+            <div className="flex justify-between mt-6">
+              <Image
+                src={image1}
+                alt="Image1"
+                className="max-w-full h-auto rounded-lg mb-4"
+                width={500}
+                height={200}
+              />
+              <Image
+                src={image2}
+                alt="Image2"
+                className="max-w-full h-auto rounded-lg mb-4"
+                width={500}
+                height={200}
+              />
+              <Image
+                src={image3}
+                alt="Image3"
+                className="max-w-full h-auto rounded-lg mb-4"
+                width={500}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </Container>
+    </>
   );
 };
 

@@ -93,7 +93,7 @@ const Navbar = () => {
               ></Image>
             </Link>
 
-            <div className="relative w-full min-w-[600px] h-[50px] text-base  bg-white flex items-center gap-0 justify-start px-12 ">
+            <div className="relative hidden lg:flex w-full min-w-[600px] h-[50px] text-base bg-white  items-center gap-0 justify-start px-12 ">
               <input
                 {...register("searchTerm")}
                 className="flex-grow h-full border-gray-300 placeholder:text-black placeholder:text-[14px] bg-[#F5F5F3]  focus:outline-none focus:boreder-[0.5px] focus:border-slate-500 p-4"
@@ -110,17 +110,17 @@ const Navbar = () => {
             </div>
             <div className="flex gap-8 mt-2 lg:mt-0 items-center pl-8 cursor-pointer relative">
               {!isAuth ? (
-                <div className="flex gap-2 justify-start items-center">
+                <div className="hidden md:flex lg:flex gap-2 justify-start items-center">
                   <Link href={`/auth/login?returnTo=${pathname}`}>
                     <div className="flex gap-2 justify-start items-center hover:bg-slate-200 p-2 rounded-md">
                       <FaUser size={20} />
-                      <p className="font-semibold">Login</p>
+                      <p className="font-semibold ">Login</p>
                     </div>
                   </Link>
                   <div className="w-[2px] h-[24px] bg-slate-800 "></div>
                   <Link href={`/auth/register?returnTo=${pathname}`}>
                     <div className="flex gap-2 justify-start items-center hover:bg-slate-200 p-2 rounded-md">
-                      <p className="font-semibold text-nowrap">Sign Up</p>
+                      <p className="font-semibold text-nowrap ">Sign Up</p>
                     </div>
                   </Link>
                 </div>
