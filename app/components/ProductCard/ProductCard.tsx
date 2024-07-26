@@ -72,8 +72,8 @@ const ProductCard = (props: IProductProps) => {
         </div>
       </div>
       <div className=" py-6 flex flex-col gap-1 border-t-0 px-4">
-        <div className="flex flex-col items-start gap-2 justify-between font-titleFont">
-          <h2 className="text-lg text-primeColor font-bold">
+        <div className="flex flex-col items-start gap-2 justify-between font-title">
+          <h2 className="text-lg text-primeColor font-semibold text-left">
             {TruncateText(props.name)}
           </h2>
           <p>
@@ -84,7 +84,7 @@ const ProductCard = (props: IProductProps) => {
             {formatPrice(props.price)}
           </p>
         </div>
-        <div>
+        <div className=" text-left">
           <p className="text-[#767676] text-[14px]">{props.image[0].color}</p>
         </div>
       </div>
