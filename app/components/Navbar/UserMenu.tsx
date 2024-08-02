@@ -76,7 +76,6 @@ const UserMenu = ({
       <div
         className="flex items-center cursor-pointer border-2 border-slate-200 hover:bg-slate-200 p-2 rounded-md  w-52"
         onClick={toggleDropdown}
-        
         aria-haspopup="true"
         aria-expanded={isOpen ? "true" : "false"}
       >
@@ -135,7 +134,7 @@ const UserMenu = ({
                 <div
                   className="flex justify-start items-center font-semibold hover:text-[#dcab4f] py-2 px-4 gap-4 whitespace-no-wrap cursor-pointer"
                   onClick={() => {
-                   router.push("/manage-profile")
+                    router.push("/manage-profile");
                     toggleDropdown();
                   }}
                   role="menuitem"
@@ -148,7 +147,6 @@ const UserMenu = ({
                 <div
                   className="flex justify-start items-center font-semibold hover:text-[#dcab4f] py-2 px-4 gap-4 whitespace-no-wrap cursor-pointer"
                   onClick={() => {
-                    handleLogOut();
                     toggleDropdown();
                   }}
                   role="menuitem"

@@ -8,6 +8,7 @@ import BannerImgn2 from "../../../public/img/image-removebg-preview.png";
 import Ban from "../../../public/img/bgk.webp";
 import trashbin from "../../../public/img/trash bin.jpg";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "next/link";
 function CarouselDiv() {
   const router = useRouter();
 
@@ -93,12 +94,12 @@ function CarouselDiv() {
     //             GateWay to endless selection
     //           </p>
     //         </div>
-            // <button
-            //   onClick={() => {
-            //     router.push("/shop");
-            //   }}
-            //   className="bg-white text-sky-500 text-xl py-2 px-6 rounded-xl font-semibold"
-            // >
+    // <button
+    //   onClick={() => {
+    //     router.push("/shop");
+    //   }}
+    //   className="bg-white text-sky-500 text-xl py-2 px-6 rounded-xl font-semibold"
+    // >
     //           Shop
     //         </button>
     //       </div>
@@ -122,18 +123,47 @@ function CarouselDiv() {
 
       <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-between items-center px-8">
         <div className="flex flex-col justify-center items-start">
-          <h1 className="text-white text-2xl md:text-4xl font-bold mb-4">
-          Transform Your Space with Professional-Grade Cleanliness
+          <h1 className="text-white text-6xl md:text-4xl font-bold mb-4">
+            Clean with Confidence
           </h1>
-          <p className="text-white text-sm md:text-lg mb-4">
-          Discover our top-of-the-line cleaning solutions designed for every corner of your home and business.
-          </p>
-          <button className="bg-white text-gray-500  hover:bg-gray-700 font-bold py-2 px-4 rounded flex justify-center gap-2 items-center" >
-            Browse Products <FaArrowRight/>
+          <h2 className="text-white text-sm md:text-lg mb-4">
+            Discover Bait Al Kuwait, your one-stop destination for all cleaning
+            needs.
+          </h2>
+          <h6 className="text-white text-sm md:text-lg mb-4">
+            From household to commercial solutions, our products ensure a
+            spotless, hygienic environment with ease.
+          </h6>
+
+          <button
+            className="bg-slate-800 text-white  hover:bg-slate-500 font-bold py-2 px-4 rounded flex justify-center gap-2 items-center"
+            onClick={() => {
+              router.push("/shop");
+            }}
+          >
+            Browse Products <FaArrowRight />
           </button>
+          {/* <a
+            href={"/"}
+            className="flex items-center text-indigo-700 border border-indigo-600 py-2 px-6 gap-2 rounded inline-flex items-center"
+          >
+            <span>Browse Products</span>
+            <svg
+              class="w-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              className="w-6 h-6 ml-2"
+            >
+              <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a> */}
         </div>
 
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <div className="inline-flex flex-col justify-between items-center text-center bg-white p-4 gap-3 hover:scale-110 rounded-lg shadow-xl">
             <Image
               src={trashbin}
@@ -142,7 +172,7 @@ function CarouselDiv() {
             />
             <p className="text-xl font-semibold m-0 p-0">Trashbin</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

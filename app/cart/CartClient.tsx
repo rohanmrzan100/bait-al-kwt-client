@@ -6,7 +6,8 @@ import Button from "../components/Button/Button";
 import { useCart } from "../hooks/useCart";
 import { formatPrice } from "../utils/FormatPrice";
 import ItemContent from "./ItemContent";
-
+import { FaCartShopping } from "react-icons/fa6";
+import { GiShoppingCart } from "react-icons/gi";
 const CartClient = () => {
   const router = useRouter();
   const { cartProduct, handleClearCart, totalPrice } = useCart();
@@ -14,15 +15,27 @@ const CartClient = () => {
     return (
       <>
         <div className="text-2xl min-h-[50vh]">
-          <div>Your Cart is Empty .....</div>
-          <div className="flex flex-col items-center mt-40">
-            <Link
+          <div className="flex flex-col items-center ">
+            <GiShoppingCart size={100} />
+            <h1>Your cart is currently empty!</h1>
+            <div className="mt-2">
+              <p className="text-sm">
+                Before you proceed to checkout,you must add some products to
+                your shoping cart.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center my-12 ">
+            {/* <Link
               href={"/"}
               className="text-slate-500 flex items-center gap-1 mt-2"
             >
               <MdArrowBack />
               <span>Start Shopping</span>
-            </Link>
+            </Link> */}
+            <button className=" px-4 py-1 bg-slate-800 text-white  rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+               Return To Shop
+            </button>
           </div>
         </div>
       </>

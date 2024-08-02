@@ -6,6 +6,7 @@ const nextConfig = {
       "ns3.actnepal.com.np",
       "localhost",
       "202.51.82.22",
+      "lh3.googleusercontent.com"
     ],
   },
   distDir: "build",
