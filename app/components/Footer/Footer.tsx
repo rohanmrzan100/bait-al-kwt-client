@@ -103,12 +103,15 @@ const Footer = () => {
                 Pricing
               </p>
               <Link href={"/about-us"}>
-              <p  className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                About Us
-              </p></Link>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Contact us
-              </p>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  About Us
+                </p>
+              </Link>
+              <Link href={"/contact-us"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Contact us
+                </p>
+              </Link>
               <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
                 Testimonials
               </p>

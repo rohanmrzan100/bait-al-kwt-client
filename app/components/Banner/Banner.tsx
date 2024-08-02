@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "../Carousel/Carousel";
 import BannerMid from "./BannerMid";
+import TextAnimate from "../Carousel/TextAnimate"
 
 import styles from "./Banner.module.css";
 import CarouselDiv from "../Carousel/Carousel";
@@ -13,7 +14,7 @@ const Banner = () => {
   return (
     <div className={styles.bannerContainer}>
       <div className={styles.carouselWrapper}>
-        <CarouselDiv />
+        <TextAnimate/>
       </div>
       <div className={ `${styles.bannerMidWrapper} hidden md:flex lg:flex`}>
         <BannerMid />
