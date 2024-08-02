@@ -3,7 +3,7 @@
 const nextConfig = {
   images: {
     domains: [
-      "ns3.actnepal.com.np",
+      "admin.baitalkwt.com",
       "localhost",
       "202.51.82.22",
       "lh3.googleusercontent.com"
