@@ -1,11 +1,10 @@
 "use client";
 import { IProductProps } from "@/app/type";
+import { BASE_URL } from "@/Constants";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import ProductCardSkeleton from "../ProductCard/ProductCardSkeleton";
-import { BASE_URL } from "@/Constants";
-import Slider from "react-slick";
 
 const CategoryBlock = ({ category }: { category: string }) => {
   const [products, setProducts] = useState<IProductProps[] | null>(null);
@@ -25,8 +24,6 @@ const CategoryBlock = ({ category }: { category: string }) => {
             BASE_URL + "/api/product/category/" + category
           );
 
-          console.log(response);
-
           setProducts(response.data.product);
           setIsLoading(true);
         }
@@ -36,54 +33,24 @@ const CategoryBlock = ({ category }: { category: string }) => {
     }
     getProductByCategory(category);
   }, []);
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024, 
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 768, 
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480, 
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <div className="my-[16px] w-full mt-20 text-center">
       <h1 className="text-[22px] text-slate-800 font-semibold mb-[16px]">
         {category == "All" ? "Just For You" : category}
       </h1>
-  
+
       {isLoading ? (
-        <Slider {...sliderSettings} className="p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-4 my-4 ">
           {products &&
             products.slice(0, 8).map((product: IProductProps) => (
               <div key={product.id} className="px-2">
                 <ProductCard {...product} />
               </div>
             ))}
-        </Slider>
+        </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 gap-y-4 my-4 px-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-4 my-4 ">
           <ProductCardSkeleton />
           <ProductCardSkeleton />
           <ProductCardSkeleton />

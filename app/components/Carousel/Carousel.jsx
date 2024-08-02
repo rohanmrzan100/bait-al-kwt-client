@@ -1,14 +1,8 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import BannerImg from "../../../public/img/banner.png";
-import BannerImgn1 from "../../../public/img/bannern1.png";
-import BannerImgn2 from "../../../public/img/image-removebg-preview.png";
-import Ban from "../../../public/img/bgk.webp";
-import trashbin from "../../../public/img/trash bin.jpg";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "next/link";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Ban from "../../../public/img/bgk.webp";
 function CarouselDiv() {
   const router = useRouter();
 
