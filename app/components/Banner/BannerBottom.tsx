@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BannerBottom() {
   return (
-    <div className=" my-8 shadow-lg 2xl:container 2xl:mx-auto  py-9 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100">
+    <div className=" my-8 shadow-lg 2xl:container 2xl:mx-auto  py-9 bg-cleanMirror">
       <div className=" rounded-lg grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-12 gap-14 lg:px-20 lg:py-12 py-10 md:px-12 px-4 -scroll-mt-8">
         {/* Delivery Grid Card */}
         <div className="flex flex-col justify-center items-center text-center">

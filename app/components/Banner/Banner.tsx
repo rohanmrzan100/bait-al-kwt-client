@@ -11,15 +11,7 @@ const Banner = () => {
   const router = useRouter();
   return (
     <div className={styles.bannerContainer}>
-      <div
-        className={styles.carouselWrapper}
-        // style={{
-        //   backgroundImage: "url('/img/Untitled.png')",
-        //   backgroundSize: "cover",
-        //   backgroundPosition: "center",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-      >
+      <div className={styles.carouselWrapper}>
         <TextAnimate />
       </div>
       <div className={`${styles.bannerMidWrapper} hidden md:flex lg:flex`}>

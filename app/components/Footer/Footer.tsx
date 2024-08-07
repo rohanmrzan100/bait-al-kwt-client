@@ -96,17 +96,23 @@ const Footer = () => {
               <h2 className="text-base font-semibold leading-4 text-gray-800">
                 Company
               </h2>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Blog
-              </p>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Pricing
-              </p>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Blog
+                </p>
+              </Link>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Pricing
+                </p>
+              </Link>
+
               <Link href={"/about-us"}>
                 <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
                   About Us
                 </p>
               </Link>
+
               <Link href={"/contact-us"}>
                 <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
                   Contact us
@@ -120,35 +126,53 @@ const Footer = () => {
               <h2 className="text-base font-semibold leading-4 text-gray-800">
                 Support
               </h2>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Legal policy
-              </p>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Status policy
-              </p>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Privacy policy
-              </p>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Terms of service
-              </p>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Legal policy
+                </p>
+              </Link>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Status policy
+                </p>
+              </Link>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Privacy policy
+                </p>
+              </Link>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Terms of service
+                </p>
+              </Link>
             </div>
             <div>
               <h2 className="text-base font-semibold leading-4 text-gray-800">
                 Profile
               </h2>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Orders
-              </p>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Addresses
-              </p>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Account Details
-              </p>
-              <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
-                Payment Options
-              </p>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Orders
+                </p>
+              </Link>
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Addresses
+                </p>
+              </Link>
+
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Account Details
+                </p>
+              </Link>
+
+              <Link href={"/"}>
+                <p className="hover:text-gray-500 hover:underline text-base leading-4 mt-6 text-gray-800 cursor-pointer">
+                  Payment Options
+                </p>
+              </Link>
             </div>
           </div>
         </div>
